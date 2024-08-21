@@ -1,0 +1,31 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"gentypes": "npx supabase gen types typescript --project-id yvssfczmkvrmrpefyqex --schema public > types/supabase.ts"
+	},
+	"dependencies": {
+		"date-fns": "^2.30.0",
+		"v-calendar": "^3.1.2",
+		"vue": "^3.4.21",
+		"vue-animated-counter": "^0.3.0",
+		"vue-router": "^4.3.0"
+	},
+	"devDependencies": {
+		"@nuxt/ui": "^2.14.2",
+		"@nuxtjs/supabase": "^1.1.7",
+		"@vite-pwa/nuxt": "^0.6.0",
+		"nuxt": "^3.11.0",
+		"sass": "^1.72.0",
+		"supabase": "^1.150.0",
+		"typescript": "^5.4.3",
+		"vue-tsc": "^1.8.27",
+		"yup": "^1.4.0"
+	}
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --inverted-rgb: 10, 10, 10;
+    --normal-rgb: 255, 255, 255;
+    &.dark {
+        --inverted-rgb: 255, 255, 255;
+        --normal-rgb: 10, 10, 10;
+    }
+    font-family: "Montserrat", sans-serif;
+}
+
+hr {
+    border-color: rgb(var(--inverted-rgb));
+    width: 100%;
+    opacity: 0.2;
+}
+
+.page-enter-from,
+.page-leave-to {
+    scale: 0.95;
+    opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.3s;
+}
